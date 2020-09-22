@@ -155,7 +155,8 @@ angular.module('flowableModeler')
                     reusable: $scope.saveDialog.reusable,
                     newVersion: $scope.saveDialog.newVersion,
                     comment: $scope.saveDialog.comment,
-                    forceDMN11: $scope.saveDialog.forceDMN11
+                    // forceDMN11: $scope.saveDialog.forceDMN11
+		    decisionTableRepresentation:{decisionTableDefinition:{forceDMN11: $scope.saveDialog.forceDMN11}}
                 };
 
                 $rootScope.currentDecisionTableRules = $scope.model.rulesData;
